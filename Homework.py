@@ -1,7 +1,6 @@
 import random
 
-
-string = input("Введите пароль состоящий из не менее 20 символов\n")
+string = input("Input your password\n")
 symbols = ('<', ',', '.', '!', '?')
 kol_symbols = 0
 dlina_str = 0
