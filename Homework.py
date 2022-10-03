@@ -1,21 +1,18 @@
 import random
 
 string = input("Input your password\n")
-
 symbols = ('<', ',', '.', '!', '?')
 alphabet = "abcdefgjiklmnoprstqwvxyz"
-
-kol_symbols = 0
-dlina_str = 0
-kol_bykv = 0
+countSymbols = 0
+countUppercase = 0
 dlina_str = len(string)
 
 for i in string:
     if i in symbols:
-        kol_symbols += 1
+        countSymbols += 1
     elif i.istitle():
-        kol_bykv += 1
-if kol_bykv > 3 and kol_symbols > 2 and dlina_str > 20:
+        countUppercase += 1
+if countUppercase > 3 and countSymbols > 2 and dlina_str > 20:
     print(string)
 else:
     lenNewPassword = random.randint(20, 40)
